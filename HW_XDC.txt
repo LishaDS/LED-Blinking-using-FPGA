@@ -1,0 +1,11 @@
+set_property PACKAGE_PIN W5[get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33[get_ports sys_clk]
+create_clock -period 10.000 -name sys_clk [get_ports sys_clk]
+
+set_property PACKAGE_PIN U18[get_ports reset]
+set_property IOSTANDARD LVCMOS33[get_ports reset]
+
+set_property PACKAGE_PIN B18[get_ports rx_0]
+set_property IOSTANDARD LVCMOS33[get_ports rx_0]
+set_property PACKAGE_PIN A18[get_ports tx_0]
+set_property IOSTANDARD LVCMOS33[get_ports tx_0]

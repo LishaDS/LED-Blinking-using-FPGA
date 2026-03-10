@@ -1,0 +1,23 @@
+`timescale 1 ps / 1 ps
+
+module design_1_wrapper
+   (reset,
+    rx_0,
+    sys_clock,
+    tx_0);
+  input reset;
+  input rx_0;
+  input sys_clock;
+  output tx_0;
+
+  wire reset;
+  wire rx_0;
+  wire sys_clock;
+  wire tx_0;
+
+  design_1 design_1_i
+       (.reset(reset),
+        .rx_0(rx_0),
+        .sys_clock(sys_clock),
+        .tx_0(tx_0));
+endmodule
